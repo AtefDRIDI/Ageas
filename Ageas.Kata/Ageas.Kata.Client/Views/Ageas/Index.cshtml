@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Ageas.Kata.BO.User>
+
+<h1>  Kata Ageas</h1>
+
+
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/Ageas.js"></script>
+
+<div id="Data">
+    @Html.Partial("pv_users", Model)
+
+
+</div>
+
+<input type="button" id="Delete" value="Delete" class="btn btn-danger" />|
+<input type="button" id="SendEmails" value="Send Emails" class="btn btn-primary" />|
+<input type="button" id="approuveUsers" value="approuve Users" class="btn btn-primary" />
+<input type="button" id="approuveUsersMock" value="approuve Mock" class="btn btn-success" />
